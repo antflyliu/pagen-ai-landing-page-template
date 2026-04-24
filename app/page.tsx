@@ -2,8 +2,6 @@ import Landing from "@/templates/shadcn/pages/landing";
 import { Metadata } from "next";
 import { page } from "@/data/demo";
 
-export const runtime = "edge";
-
 export async function generateMetadata(): Promise<Metadata> {
   return {
     alternates: {
