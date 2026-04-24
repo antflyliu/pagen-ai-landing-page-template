@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export interface Page {
   template?: string;
   theme?: string;
@@ -84,7 +86,7 @@ export interface Item {
   type?: string;
   url?: string;
   target?: string;
-  icon?: JSX.Element;
+  icon?: ReactNode;
   avatar?: Image;
   image?: Image;
   video?: Video;
