@@ -2,7 +2,7 @@ import { Facebook, Github, Instagram, Twitter } from "lucide-react";
 import { Footer, Item, Nav } from "@/types/landing";
 
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+// import { Input } from "@/components/ui/input";
 
 export default function ({ footer }: { footer: Footer }) {
   if (footer.disabled) {
@@ -70,9 +70,9 @@ export default function ({ footer }: { footer: Footer }) {
         {/* Copyright */}
         <div className="mt-4 text-center">
           <p className="text-base text-gray-400">{footer.copyright}</p>
-          {!footer.badge_disabled && (
+{/*          {!footer.badge_disabled && (
             <div className="mt-4 mb-2 flex flex-wrap space-x-2 text-sm dark:text-gray-400">
-              {/* <div className="w-full flex-shrink-0">
+              {<div className="w-full flex-shrink-0">
                 built with{" "}
                 <a
                   href="https://pagen.so"
@@ -81,9 +81,9 @@ export default function ({ footer }: { footer: Footer }) {
                 >
                   Pagen
                 </a>
-              </div> */}
+              </div>}
             </div>
-          )}
+          )}*/}
         </div>
       </div>
     </footer>
