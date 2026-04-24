@@ -1,0 +1,10 @@
+// @opennextjs/cloudflare migrate will merge this with auto-generated config.
+// We define a minimal config to override the auto-generated WORKER_SELF_REFERENCE binding
+// which references 'pagen-template' (package.json name) that doesn't exist in the account.
+// WORKER_SELF_REFERENCE is only needed for incremental cache between Workers — not used here.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ai-landing-page",
+  "compatibility_date": "2026-04-24",
+  "compatibility_flags": ["nodejs_compat"]
+}
