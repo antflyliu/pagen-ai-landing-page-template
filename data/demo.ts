@@ -5,66 +5,38 @@ export const page: Page = {
   theme: "light",
   header: {
     brand: {
-      title: "Pagen",
+      title: "从立创星科技",
       avatar: {
         src: "/imgs/logo.png",
-        title: "Pagen",
+        title: "北京从立创星科技有限公司",
       },
       url: "/",
     },
     nav: {
       items: [
-        {
-          title: "Pricing",
-          url: "https://pagen.so/pricing",
-          target: "_blank",
-        },
-        {
-          title: "Generators",
-          url: "https://pagen.so/landing-page-generator",
-          target: "_blank",
-        },
-        {
-          title: "Showcases",
-          url: "https://pagen.so/showcases",
-          target: "_blank",
-        },
-        {
-          title: "Templates",
-          url: "https://pagen.so/templates",
-          target: "_blank",
-        },
+        { title: "服务能力", url: "#services" },
+        { title: "解决方案", url: "#solutions" },
+        { title: "技术优势", url: "#features" },
+        { title: "常见问题", url: "#faq" },
       ],
     },
     buttons: [
       {
-        title: "Sign In",
-        url: "https://pagen.so/api/auth/signin?callbackUrl=%2Flanding-page-generator",
-        target: "_blank",
+        title: "联系合作",
+        url: "#contact",
       },
     ],
   },
   hero: {
-    title: "Create Landing Page with AI Power",
+    title: "让 AI 真正进入业务流程",
     description:
-      "Design and launch high-converting landing pages with ease using Pagen AI. Ship Fast with your ideas.",
-    image: {
-      src: "/imgs/hero.png",
-    },
+      "北京从立创星科技有限公司专注 AI 应用开发、智能知识库、自动化工作流与企业数字化系统建设，帮助团队把想法快速落成可用产品。",
+    image: { src: "/imgs/hero.png" },
     image_position: "right",
     text_align: "left",
     buttons: [
-      {
-        title: "Start for free",
-        url: "https://pagen.so/landing-page-generator",
-        target: "_blank",
-      },
-      {
-        title: "Vote on ProductHunt",
-        url: "https://www.producthunt.com/posts/pagen",
-        target: "_blank",
-        theme: "outline",
-      },
+      { title: "了解服务", url: "#services" },
+      { title: "咨询方案", url: "#contact", theme: "outline" },
     ],
     show_happy_users: true,
     show_proof: false,
@@ -72,296 +44,237 @@ export const page: Page = {
   section: {
     items: [
       {
-        name: "what",
-        title: "What is Pagen",
+        name: "services",
+        title: "我们能做什么",
         description:
-          "Pagen is an AI landing page generator that simplifies the process of creating effective landing pages. With its intuitive interface and smart algorithms, you can generate pages that convert visitors into customers.",
-        image: {
-          src: "/imgs/section1.png",
-        },
+          "围绕企业真实业务场景，从需求梳理、原型验证到系统交付，提供轻量、高效、可持续迭代的 AI 技术服务。",
+        image: { src: "/imgs/section1.png" },
         image_position: "left",
         text_align: "center",
         items: [
           {
-            title: "Landing Page Generator",
+            title: "AI 应用开发",
             description:
-              "Pagen can help to generate landing page quickly from your idea",
+              "基于大语言模型、AIGC、OCR、语音识别等能力，开发智能助手、内容生成、数据处理与行业工具。",
           },
           {
-            title: "Page Content Generator",
+            title: "企业知识库问答",
             description:
-              "Pagen can help to Generate high-quality page content with AI",
+              "面向制度文档、产品资料、客服话术和项目资料，建设可检索、可追溯、可持续更新的智能知识库。",
           },
           {
-            title: "Variety Templates",
+            title: "业务流程自动化",
             description:
-              "Pagen has multiple built-in page templates to make landing page looks great",
+              "把重复录入、信息整理、报表生成、客户跟进等流程自动化，减少人工消耗，提高响应速度。",
           },
         ],
       },
       {
-        name: "why",
-        title: "Why Choose Pagen",
+        name: "solutions",
+        title: "适合落地的业务场景",
         description:
-          "Pagen stands out with its user-friendly design, powerful AI capabilities, and customizable templates that cater to various industries. It saves you time and enhances your marketing efforts.",
-        image: {
-          src: "/imgs/section2.png",
-        },
+          "AI 不应该只停在演示里。我们更关注它如何接入现有流程、降低使用门槛，并持续产生业务价值。",
+        image: { src: "/imgs/section2.png" },
         image_position: "right",
         text_align: "center",
         items: [
           {
-            title: "Ship Fast",
-            description: "Create landing page in seconds",
+            title: "智能客服与售前助手",
+            description:
+              "沉淀问答知识、自动回复常见咨询，帮助销售和客服团队更快响应客户。",
           },
           {
-            title: "Easy to use",
-            description: "Just need a product name from your idea",
+            title: "企业内部智能助手",
+            description:
+              "连接知识库、表格、文档和系统数据，让员工用自然语言完成查询、整理和生成。",
           },
           {
-            title: "AI Powered",
-            description: "Generate high-quality page content with AI",
+            title: "行业内容与数据处理",
+            description:
+              "批量生成营销素材、整理非结构化资料、抽取关键信息，让内容和数据处理不再靠硬熬。",
           },
         ],
       },
       {
-        name: "how",
-        title: "How to Use Pagen",
+        name: "process",
+        title: "合作流程",
         description:
-          "Getting started with Pagen is simple and quick. Follow these steps to create your first landing page:",
-        image: {
-          src: "/imgs/section3.png",
-        },
+          "从一个清晰的小目标开始，先验证价值，再逐步扩展功能。少走弯路，就是最快的交付方式。",
+        image: { src: "/imgs/section3.png" },
         image_position: "left",
         text_align: "center",
         items: [
           {
-            title: "1. Describe your Idea",
+            title: "1. 需求诊断",
             description:
-              "Give a product name and a simple description to Pagen Landing Page Genrator.",
+              "梳理业务目标、使用人群、数据来源和交付边界，确认最值得优先落地的 AI 场景。",
           },
           {
-            title: "2. Choose a Template",
+            title: "2. 原型验证",
             description:
-              "Select from a variety of professionally designed templates that suit your needs.",
+              "快速搭建 Demo 或最小可用版本，用真实数据验证效果、成本和可用性。",
           },
           {
-            title: "3. Customize Your Page",
+            title: "3. 交付迭代",
             description:
-              "Use our AI tools to personalize your landing page with text, images, and branding.",
+              "完成系统开发、部署、培训与后续优化，让方案从能看变成真能用。",
           },
         ],
-        buttons: [
-          {
-            title: "Read to try 👉",
-            url: "https://pagen.so/landing-page-generator",
-            target: "_blank",
-          },
-        ],
+        buttons: [{ title: "开始沟通 👉", url: "#contact" }],
       },
     ],
   },
   feature: {
-    title: "Key Features of Pagen",
+    title: "技术优势",
     description:
-      "Explore the powerful features that make Pagen the best choice for landing page creation.",
+      "我们用工程化方式做 AI，把模型能力、业务规则、数据安全和用户体验放在同一张图里考虑。",
     items: [
       {
-        title: "AI-Powered Design",
+        title: "大模型应用集成",
         description:
-          "Harness the power of AI to automatically generate beautiful and responsive landing page designs tailored to your brand and target audience.",
-        avatar: {
-          src: "/imgs/icons/1.svg",
-        },
+          "支持对接主流大模型能力，结合提示词工程、工具调用和业务规则，让 AI 输出更稳定、更贴合场景。",
+        avatar: { src: "/imgs/icons/1.svg" },
       },
       {
-        title: "Customizable Templates",
+        title: "RAG 知识库方案",
         description:
-          "Choose from a wide range of customizable templates that fit your brand's style and message.",
-        avatar: {
-          src: "/imgs/icons/2.svg",
-        },
+          "面向企业文档构建检索增强问答，支持知识切分、向量检索、引用溯源与持续更新。",
+        avatar: { src: "/imgs/icons/2.svg" },
       },
       {
-        title: "SEO Optimization",
+        title: "Agent 工作流",
         description:
-          "Built-in SEO tools to help your landing pages rank higher in search engines and attract more visitors.",
-        avatar: {
-          src: "/imgs/icons/3.svg",
-        },
+          "将多步骤任务拆解为可控流程，让 AI 能完成查询、分析、生成、调用系统等连续动作。",
+        avatar: { src: "/imgs/icons/3.svg" },
       },
       {
-        title: "Analytics Integration",
+        title: "数据处理自动化",
         description:
-          "Track the performance of your landing pages with integrated analytics tools to optimize your campaigns.",
-        avatar: {
-          src: "/imgs/icons/4.svg",
-        },
+          "处理表格、文档、图片、合同和客服记录等多源数据，减少人工整理和重复劳动。",
+        avatar: { src: "/imgs/icons/4.svg" },
       },
       {
-        title: "Mobile Responsiveness",
+        title: "可部署可维护",
         description:
-          "All landing pages created with Pagen are fully responsive, ensuring a seamless experience on any device.",
-        avatar: {
-          src: "/imgs/icons/5.svg",
-        },
+          "根据项目需要支持云端部署、私有化部署或轻量化集成，便于后续维护和二次开发。",
+        avatar: { src: "/imgs/icons/5.svg" },
       },
       {
-        title: "User-Friendly Interface",
+        title: "以结果为导向",
         description:
-          "An intuitive drag-and-drop interface that makes it easy for anyone to create stunning landing pages without any coding skills.",
-        avatar: {
-          src: "/imgs/icons/6.svg",
-        },
+          "不堆概念，优先关注业务指标、使用体验、响应速度和实际节省的时间成本。",
+        avatar: { src: "/imgs/icons/6.svg" },
       },
     ],
   },
   cta: {
-    title: "Can't wait to use Pagen?",
-    description: "Just start from here, make your idea to be seen",
-    buttons: [
-      {
-        title: "Try Now",
-        url: "https://pagen.so/landing-page-generator",
-        target: "_blank",
-      },
-    ],
+    title: "有一个 AI 想法？先把它做成能用的版本",
+    description: "从小场景切入，快速验证，稳步升级。让 AI 项目不再只停留在 PPT 里。",
+    buttons: [{ title: "预约沟通", url: "#contact" }],
   },
   testimonial: {
-    title: "What Users Say About Pagen",
+    title: "典型服务方向",
     description:
-      "Hear from our satisfied users who have transformed their landing page creation process.",
+      "以下为可落地的项目类型示例，可根据企业行业、数据条件和预算进行组合。",
     items: [
       {
-        name: "Mike Jordan",
-        title: "Full-stack Developer",
+        name: "知识库问答系统",
+        title: "适合客服、售前、内部培训",
         description:
-          "I love this tool so much, it's awesome! Pagen has made my landing page creation process so much easier.",
-        avatar: {
-          src: "/imgs/user/1.png",
-        },
+          "把企业资料变成可问可查的智能助手，提升信息获取效率，减少重复答疑。",
+        avatar: { src: "/imgs/user/1.png" },
       },
       {
-        name: "Sarah Lee",
-        title: "Marketing Manager",
+        name: "AI 内容生产工具",
+        title: "适合运营、电商、营销团队",
         description:
-          "Pagen's AI technology is a game changer. I can create landing pages in minutes!",
-        avatar: {
-          src: "/imgs/user/2.png",
-        },
+          "批量生成标题、文案、商品描述、短视频脚本和活动素材，提升内容生产速度。",
+        avatar: { src: "/imgs/user/2.png" },
       },
       {
-        name: "Tom Smith",
-        title: "Entrepreneur",
+        name: "智能表格与报表助手",
+        title: "适合行政、财务、销售管理",
         description:
-          "The templates are beautiful and customizable. I highly recommend Pagen!",
-        avatar: {
-          src: "/imgs/user/3.png",
-        },
+          "自动整理数据、生成摘要、输出报表和分析结论，让表格工作少一点痛苦。",
+        avatar: { src: "/imgs/user/3.png" },
       },
       {
-        name: "Emily Davis",
-        title: "Content Creator",
+        name: "文档识别与信息抽取",
+        title: "适合合同、票据、档案处理",
         description:
-          "Pagen has helped me increase my conversion rates significantly. It's a must-have tool!",
-        avatar: {
-          src: "/imgs/user/4.png",
-        },
+          "识别图片和文档中的关键信息，自动结构化入库，降低人工录入成本。",
+        avatar: { src: "/imgs/user/4.png" },
       },
       {
-        name: "John Doe",
-        title: "Business Owner",
+        name: "智能客服机器人",
+        title: "适合官网、私域、售后场景",
         description:
-          "I was able to create a professional landing page without any design skills. Thank you, Pagen!",
-        avatar: {
-          src: "/imgs/user/5.png",
-        },
+          "结合业务知识和转人工机制，构建更稳的客户问答与服务流程。",
+        avatar: { src: "/imgs/user/5.png" },
       },
       {
-        name: "Lisa White",
-        title: "Freelancer",
+        name: "定制化 AI 工具平台",
+        title: "适合需要长期迭代的团队",
         description:
-          "The user interface is so easy to navigate. I love using Pagen for my projects!",
-        avatar: {
-          src: "/imgs/user/6.png",
-        },
+          "围绕企业自身流程开发专属工具，把多个 AI 能力整合到一个统一入口。",
+        avatar: { src: "/imgs/user/6.png" },
       },
     ],
   },
   faq: {
-    title: "Frequently Asked Questions About Pagen",
-    description: "Find answers to common questions about using Pagen.",
+    title: "常见问题",
+    description: "关于 AI 项目落地、数据、安全和交付方式，你可能会先问这些。",
     items: [
       {
-        title: "How many pages can I generate using Pagen?",
+        title: "你们主要做哪类 AI 项目？",
         description:
-          "You can generate 3 pages as default, get more credits for page generation when you upgrade to Pro.",
+          "主要覆盖 AI 应用开发、企业知识库问答、智能客服、业务流程自动化、数据处理和定制化系统开发。",
       },
       {
-        title: "Is there a free trial available?",
+        title: "没有完整需求文档，可以开始吗？",
         description:
-          "Yes, Pagen offers a free trial so you can explore its features before committing.",
+          "可以。通常会先从业务目标和现有流程开始梳理，再确定优先级、功能边界和最小可用版本。",
       },
       {
-        title: "Can I integrate Pagen with other tools?",
+        title: "企业内部资料能否接入知识库？",
         description:
-          "Absolutely! Pagen integrates seamlessly with various marketing and analytics tools.",
+          "可以接入常见文档、表格和网页资料，并根据项目需要设计权限、更新机制和引用溯源。",
       },
       {
-        title: "What types of businesses can benefit from Pagen?",
+        title: "是否支持私有化部署？",
         description:
-          "Pagen is perfect for marketers, startups, e-commerce businesses, and anyone looking to create effective landing pages.",
+          "可根据数据敏感度、预算和运维条件评估云端、私有化或混合部署方案。",
       },
       {
-        title: "Do I need coding skills to use Pagen?",
+        title: "项目周期一般多久？",
         description:
-          "No coding skills are required! Pagen is designed for users of all skill levels.",
+          "轻量原型通常可以较快验证，完整系统周期取决于功能复杂度、数据准备情况和集成范围。",
       },
       {
-        title: "What support options are available?",
+        title: "如何判断一个 AI 场景值不值得做？",
         description:
-          "Pagen offers customer support via email and a comprehensive knowledge base for self-help.",
+          "优先看是否高频、重复、耗时、规则相对明确，并且有足够数据支撑。能明确节省时间或提升转化的场景更值得优先落地。",
       },
     ],
   },
   footer: {
     brand: {
-      title: "Pagen",
+      title: "北京从立创星科技有限公司",
       description:
-        "Pagen is a page generator powered by AI, it's designed to help businesses and marketers effortlessly create high-converting landing pages that drive results.",
+        "专注 AI 应用落地、智能知识库、自动化工作流与企业数字化系统建设，帮助企业把 AI 变成真实生产力。",
       avatar: {
         src: "/imgs/logo.png",
-        title: "Pagen",
+        title: "北京从立创星科技有限公司",
       },
-      url: "https://pagen.so",
+      url: "/",
     },
     badge_disabled: false,
-    copyright: "© 2024 • Pagen All rights reserved.",
+    copyright: "© 2026 • 北京从立创星科技有限公司 All rights reserved.",
     social: {
       items: [
         {
-          title: "Twitter",
-          url: "https://x.com/aipagen",
-          target: "_blank",
-        },
-        {
-          title: "ProductHunt",
-          url: "https://www.producthunt.com/posts/pagen",
-          target: "_blank",
-        },
-        {
-          title: "Discord",
-          url: "https://discord.gg/ZUSutBR4Pv",
-          target: "_blank",
-        },
-        {
-          title: "Telegram",
-          url: "https://t.me/+PCy10CEWOvA3Zjdl",
-          target: "_blank",
-        },
-        {
           title: "Email",
-          url: "mailto:support@pagen.so",
+          url: "mailto:contact@example.com",
           target: "_self",
         },
       ],
@@ -369,46 +282,26 @@ export const page: Page = {
     nav: {
       items: [
         {
-          title: "Products",
+          title: "服务",
           children: [
-            {
-              title: "Landing Page Generator",
-              url: "https://pagen.so/landing-page-generator",
-              target: "_blank",
-            },
+            { title: "AI 应用开发", url: "#services" },
+            { title: "知识库问答", url: "#solutions" },
+            { title: "流程自动化", url: "#process" },
           ],
         },
         {
-          title: "Friends",
+          title: "公司",
           children: [
-            {
-              title: "ThinkAny",
-              url: "https://thinkany.ai",
-              target: "_blank",
-            },
-            {
-              title: "HeyBeauty",
-              url: "https://heybeauty.ai",
-              target: "_blank",
-            },
-            {
-              title: "GPTs Works",
-              url: "https://gpts.works",
-              target: "_blank",
-            },
+            { title: "技术优势", url: "#features" },
+            { title: "常见问题", url: "#faq" },
+            { title: "商务合作", url: "#contact" },
           ],
         },
         {
-          title: "Services",
+          title: "合规",
           children: [
-            {
-              title: "Privacy Policy",
-              url: "/privacy-policy",
-            },
-            {
-              title: "Terms of Service",
-              url: "/terms-of-service",
-            },
+            { title: "隐私政策", url: "/privacy-policy" },
+            { title: "服务条款", url: "/terms-of-service" },
           ],
         },
       ],
